@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Latex</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+		</script>
+		<script type="text/javascript" async
+		  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+		</script>
+		<style>
+		body{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			background-color: #F5F5F5;
+		}
+		p {
+			
+		}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<h1 align="center">ЭЙЛЕР И ЕГО ФОРМУЛА</h1>
+			<h3 align="center">
+				Теорема
+			</h3>
+			<p align="center">
+			
+				$ {\large e^{{\pi}i}=1 }$
+			
+
+			<p align="left" margin-left="10px">
+			Доведення. При доведенні ми будемо використовувати наступну формулу (вона носить назву біном Ньютона):
+			</p>
+			<p align="center" >
+				$ {\large (a+b)^n = a^n + C^1_n a^{n-1} b+C^2_n a^{n-2} b^2+ \dots + C^{n-2}_n a^2 b^{n-2} + C^{n-1}_n ab^{n-1}+ b^n }$
+			</p>
+				де $n$ - натуральне число, $ {\large C^k_n= \frac {n!}{k!(n-k)!}}$
+
+				Як відомо <p >$$ {\large e= \lim_ {n\to\infty} (1+ \frac1n )^n}$$</p>Застосуємо формулу бинома Ньютона:
+				<p align="center">$ {\large (1+ \frac{1}{n})^n= 1+ \frac{n}{1!} \cdot \frac{1}{n} + \frac {n(n-1)}{2!} \cdot \frac{1}{n^2} + \frac{n(n-1)(n-2)}{3!} \cdot \frac{1}{n^3} + \dots }$</p>
+				Перейдемо в обох частинах рівності до межі при ${n\to\infty}$ і отримаємо наступне розкладання в ряд: 
+				<p  align="center">$ {\large  e=1 + \frac{1}{1!}+ \frac{1}{2!}+ \frac{1}{3!}+ \dots }$</p>
+				Міркуючи аналогічно, можна отримати розкладання:
+				$$ {\large e= \lim_ {n\to\infty} (1 + \frac{x}{n})^n = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots = \sum_{k=0}^\infty \frac{x^k}{k!}}$$  
+				Скористаємося формулою Тейлора з центром в точці 0 щоб розкласти в ряд функції $\sin(x)$ і $\cos(x)$: <p align="center">$ {\large f(x) = f(0) + \frac{f^\prime(0)}{1!}x + \frac{(f^{\prime\prime})(0)}{2!}x^2 + 
+				\frac{f^{\prime\prime\prime}(0)}{3!}x^3 + \dots }$</p>
+				Оскільки $ (\sin x ){\prime} = \cos x, (\cos x ){\prime} = -\sin x$ отримуємо, що  
+
+				<p align="center">$ {\large \sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dots, \cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \dots }$</p>
+				ідея Ейлера полягає в тому, що формулу для $e^x$ можна застосовувати не тільки до дійсних, але і до комплексних чисел: <p align="center">$ {\large e^z= 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \frac{z^5}{5!} + \dots,}$</p>
+				де $z$ - довільне комплексне число. <br>
+				Підставимо в цю формулу $z= {{\pi}i}$ (де $i$ - уявна одиниця, тобто $i^2=-1$): <p align="center"> $ {\large e^{{\pi}i}=1 + {{\pi}i} + \frac{({{\pi}i})^2}{2!} + \frac{({{\pi}i})^3}{3!} + \frac{({{\pi}i})^4}{4!} + \frac{({{\pi}i})^5}{5!} + \dots = 1 + {{\pi}i} - \frac{{\pi}^2}{2!} -  \frac{{\pi}^3}{3!}i + \frac{{\pi}^4}{4!} + \frac{{\pi}^5}{5!}i - \dots = (1 - \frac{{\pi}^2}{2!} + \frac{{\pi}^4}{4!}- \dots)+ i ( {\pi} - \frac{{\pi}^3}{3!} + \frac{{\pi}^5}{5!} - \dots) = \cos {\pi} + i \sin {\pi} = 1} $ 
+					
+				</p> 
+				<h3 >
+					Теорема доведена
+
+
+
+					<p align="center">
+						Формула Гаусса — Остроградского
+					</p>
+					<p>
+						$$ \iiint\limits_V div F\, dv = \iint\limits_S F \cdot n\ dS$$
+					</p>
+
+					<p>
+						$$  \int  \left (\frac{dP}{dx}+ \frac{dQ}{dy}+ \frac{dR}{dz}  \right) \omega =  \int \left ( P \cos\alpha + Q \cos\beta + R \cos\gamma \right) s $$
+					</p>
+
+					<p>
+						$$  \int  \left (\frac{dP}{dx}+ \frac{dQ}{dy}+ \frac{dR}{dz}  \right) d\Omega =  \int \left ( P \cos\alpha + Q \cos\beta + R \cos\gamma \right) dS $$
+					</p>
+				</h3>
+							</p>
+
+			<h2 align="center">
+				Виконав - Студент групи СОІ-16-1с Скапа Владислав
+			</h2>
+
+
+
+				
+				</div>
+	</body>
+</html>
