@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<subjects>
+		<subject>
+			<name>Організація та обробка електронної інформації</name>
+    		<room>2513</room>
+    		<teacher>Славко Г.В.</teacher>
+    	</subject>
+    	<subject>
+			<name>Теорія програмування</name>
+    		<room>2501</room>
+    		<teacher>Григорова Т.А.</teacher>
+    	</subject>
+    	<subject>
+			<name>Методи оптимізації та дослідження операції</name>
+    		<room>2503</room>
+    		<teacher>Зінов'єв А.С.</teacher>
+    	</subject>
+    	<subject>
+			<name>Математична логіка та теорія алгоритмів</name>
+    		<room>2412</room>
+    		<teacher>Галаган О.Г.</teacher>
+    	</subject>
+    	<subject>
+			<name>Теорія ймовірностей і математична статистика</name>
+    		<room>2502</room>
+    		<teacher>Ляшенко В.П.</teacher>
+    	</subject>
+    	<subject>
+			<name>Дидактика інформатики</name>
+    		<room>2510</room>
+    		<teacher>Грицюк О.С.</teacher>
+    	</subject>
+    	<subject>
+			<name>Технологія інформаційного менеджменту</name>
+    		<room>3302</room>
+    		<teacher>Почтовюк С.І.</teacher>
+    	</subject>
+    </subjects>
